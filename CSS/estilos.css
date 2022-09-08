@@ -1,5 +1,12 @@
-body {
+h1 {
     color: red;
     text-align: center;
     font-family: "Arial";
+}
+
+p{
+    color: plum;
+    text-align:center;
+    font-family: "Arial";
+
 }

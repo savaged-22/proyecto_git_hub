@@ -1,0 +1,50 @@
+git cheatseat commands:
+Esos son los comandos y pasos a seguir para poder realizar push al respositorio remoto
+
+
+Git init --> inicia un nuevo repositorio en local en la carpeta en la que esta el proyecto
+
+git add <nombre_del_archivo>
+
+git add .  --> Agregar todos los archivos que tuvieron cambios al repositorio
+
+git status --> saber los archivos que tuvieron cambios
+
+git show --> va a mostrar todos los cambios realizados en la linea del tiempo
+
+git log --> para ver la historia de los cambios de un archivo 
+
+Esos son los comandos y pasos a seguir para poder realizar push al respositorio remoto
+
+
+git diff --> Compara dos commits para saber sus cambios 
+ex: git diff 3b570e629a57c314a19e110e9d5ac7a58b36de9c(primer commit sera el antiguo) 00df826ac5e3dee6066501aea14f085f2482ab33(el segundo commit sera el tercero)
+
+git checkout <nombre del commit> <nombre del archivo> este muestra los cambios del usuario sobre el archivo pasado
+
+
+% aqui es git reset vs git rm
+git reset <nombre del commit> --hard --> este comando lo que hace es borrar todo lo trabajado y te regresa al commit anterior o que desee ir 
+
+git reset <nombre del commit> --soft --> dejarte los cambios que trabajaste, pero te devuelve al archivo actual
+
+git reset HEAD: este es el comando para sacar archivos del area de staging, no para borrarlos ni nada de eso, solo para los ultimos cambios de estos archivos no se envien en el ultimo commit a menos que cambios de opinion y los incluyamos de nuevo en staging con git add, por supesto.
+
+git rm VS git reset
+
+git rm --cached --> Elimina los archivos de nuestro repositorio local y del area de staging, pero los mantiene en nuestro disco duro. Bacsicamente le dice a git que deje de trackear el historial de cambios de estos archivos, por lo que pasaran a un estado untracked. 
+
+git rm --force --> Elimina los archivos de git y del disco duro, git siempre guarda todo, por lo que podemos acceder al registro de la existencia de los archivos de modo que podremos recuperarlos si es necesario (pero debemos usar comando mas avanzados)
+% Aqui acaba el git reset vs git rm
+
+
+% Funcionamiento con ramas.
+
+git checkout <nombre de la rama> --> para moverse entre ramas locales.
+git checkout -b <nombre de la rama a crear> --> crear y moverse a una nueva rama.
+git branch <nombre de la rama a crear> --> crea una rama con el commit que apunta al head y la rama nueva creada.
+
+
+  
+
+

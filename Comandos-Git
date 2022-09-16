@@ -14,6 +14,8 @@ git show --> va a mostrar todos los cambios realizados en la linea del tiempo
 
 git log --> para ver la historia de los cambios de un archivo 
 
+git pull --> 
+
 Esos son los comandos y pasos a seguir para poder realizar push al respositorio remoto
 
 
